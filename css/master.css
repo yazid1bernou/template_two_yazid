@@ -1,0 +1,137 @@
+/* Start Global Variables  */
+:root {
+    --main-color : #0F748F;
+}
+/* End Global Variables  */
+
+/* Start  Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+}
+ul {
+    list-style: none;
+}
+
+
+.container {
+  padding-top: 15px;
+  padding-bottom: 15px; 
+  margin: auto; 
+    
+}
+/* Small */
+@media (min-width :  768px) {
+     .container {
+        width: 750px;
+     } 
+}
+/* Medium */
+@media (min-width :  992px) {
+    .container {
+       width: 970px;
+    } 
+}
+/* Large */
+@media (min-width :  1200px) {
+    .container {
+       width: 1170px;
+    } 
+}
+/* End Global Rules */ 
+
+/* Star Header */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 97px;
+}
+header .container .logo img {
+   height: 40px;
+}
+header .container nav {
+  flex : 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+}  
+header  nav ul {
+   display: flex;
+}
+
+
+@media(max-width : 767px) {
+    header nav ul {
+        display: none;
+    }
+    header  nav .toggle-menu:hover + ul {
+        display: flex;
+        flex-direction: column;
+       position: absolute;
+        top: 100%;  
+        left: 0; 
+        background-color: black;
+        opacity: 0.5;
+        width: 100%;
+
+    }
+  
+}
+header .container nav ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 35px 20px;
+    transition: 0.3s;
+    
+} 
+
+header .container nav ul li a:hover,
+header .container nav ul li a.active
+  { 
+  
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+header .container nav .form  {
+    position: relative;
+     margin-left: 200px; 
+    border-left: 2px solid #fff;
+    padding-left: 20px;
+}
+
+header .container nav .form i {
+   
+    color: #fff;
+    font-size: 22px;
+    
+    
+    
+}
+header .container nav .toggle-menu {
+    color: #fff;
+    font-size: 22px;
+}
+@media (min-width : 768px) {
+    header  nav .toggle-menu {
+        display: none;
+    }
+}
+
+
+/* End Header */
+
