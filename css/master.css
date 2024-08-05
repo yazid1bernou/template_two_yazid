@@ -56,12 +56,11 @@ ul {
 
 /* Start Components */
 
-.section {
-    padding: 100px;
-}
+
 
 .main-heading {
     text-align: center;
+    margin-top: 80px;
 }
 
 .main-heading h2 {
@@ -100,8 +99,8 @@ ul {
 .main-heading p {
     margin: 60px auto;
     color: #777;
-    width: 500px;
-    line-height: 1.6;
+    width: 550px;
+    line-height: 2;
 
 
 }
@@ -317,3 +316,46 @@ header .container .logo img {
 
 
 /* End Landing */
+/* Start Services */
+.services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services .services-container {}
+
+@media(min-width : 768px) {
+    .services .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 60px;
+        grid-row-gap: 60px;
+
+    }
+}
+
+.services .services-container .box-srv {
+    display: flex;
+
+
+}
+
+.services .services-container .box-srv i {
+    margin-right: 50px;
+    font-size: 40px;
+}
+
+.services .services-container .box-srv .text {}
+
+.services .services-container .box-srv .text h3 {
+    color: #4ED2FA;
+    margin-bottom: 20px;
+
+}
+
+.services .services-container .box-srv .text p {
+    color: #777;
+    line-height: 1.8;
+}
+
+/* End Services */
