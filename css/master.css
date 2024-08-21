@@ -713,3 +713,151 @@ header .container .logo img {
 }
 
 /* End Statics */
+
+/* Start Skills */
+.skills {
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+
+.skills .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width : 767px) {
+    .skills .container {
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+        row-gap: 80px;
+    }
+}
+
+.skills .container .testimonials,
+.skills .container .our-skills {
+    flex-basis: 45%;
+}
+
+.skills .container .testimonials {}
+
+.skills .container .testimonials .text,
+.skills .container .our-skills .text {
+    text-align: center;
+}
+
+.skills .container .testimonials .text h3,
+.skills .container .our-skills .text h3 {
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.skills .container .testimonials .text p,
+.skills .container .our-skills .text p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.skills .container .testimonials .content {
+    display: flex;
+    column-gap: 80px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+
+
+.skills .container .testimonials .content img {
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.skills .container .testimonials .content .profil-text {
+    border-bottom: 1px solid #777;
+    position: relative;
+}
+
+.skills .container .testimonials .content .profil-text p {
+    color: #555;
+}
+
+.skills .container .testimonials .content .profil-text p:nth-last-of-type(1) {
+    text-align: right;
+    color: #999;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.skills .container .testimonials .bulles {
+    display: flex;
+    justify-content: center;
+}
+
+.skills .container .testimonials .bulles li {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin-right: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.skills .container .testimonials .bulles li.active {
+    background-color: var(--main-color-second);
+}
+
+.skills .container .our-skills .prog-holder {}
+
+.skills .container .our-skills .prog-holder .prog {
+    height: 25px;
+    background-color: #DEDADC;
+    margin: 5px 0 20px;
+
+
+}
+
+.skills .container .our-skills .prog-holder .prog span {
+    display: block;
+    background-color: #19C8FA;
+    position: relative;
+    height: 100%;
+
+}
+
+.skills .container .our-skills .prog-holder .prog span::before {
+    content: attr(data-progress);
+    position: absolute;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    top: -30px;
+    right: -18px;
+
+}
+
+.skills .container .our-skills .prog-holder .prog span::after {
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    top: -11px;
+    right: -6px;
+
+}
+
+/* End Skills */
